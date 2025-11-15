@@ -20,13 +20,12 @@ const HeroSection = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${backgroundImg})` }}
       >
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-black/10"></div>
       </div>
 
       {/* Content Container */}
       <div className="relative z-10 flex flex-col min-h-screen">
         {/* Navbar */}
-        <Navbar />
 
         {/* Main Content - Takes remaining space after navbar */}
         <div className="flex-1 flex flex-col justify-between pt-16 lg:pt-20">
@@ -123,7 +122,7 @@ const HeroSection = () => {
           <div className="pb-6 sm:pb-8 pt-4">
             <div className="flex flex-col items-center gap-4 sm:gap-6">
               {/* First Row - 3 icons */}
-              <div className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-10">
+              <div className="flex flex-wrap justify-center gap-6 sm:gap-6 md:gap-12 lg:gap-32">
                 {icons.slice(0, 3).map(({ icon: Icon, label }, index) => (
                   <div
                     key={index}
@@ -143,7 +142,7 @@ const HeroSection = () => {
               </div>
               
               {/* Second Row - 3 icons */}
-              <div className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-10">
+              <div className="flex flex-wrap justify-center gap-6 sm:gap-6 md:gap-12 lg:gap-32">
                 {icons.slice(3, 6).map(({ icon: Icon, label }, index) => (
                   <div
                     key={index + 3}

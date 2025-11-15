@@ -3,6 +3,11 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Loader from "./components/Loader";
+import Categories from "./pages/Categories";
+import Listing from "./pages/Listing";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import ContactUs from "./pages/ContactUs";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -21,9 +26,14 @@ function App() {
         <Loader />
       ) : (
         <BrowserRouter>
+        <Navbar/>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/categories" element={<Categories />} />
+            <Route path="/listing" element={<Listing />} />
+            <Route path="/contact" element={<ContactUs />} />
           </Routes>
+          <Footer/>
         </BrowserRouter>
       )}
     </>
