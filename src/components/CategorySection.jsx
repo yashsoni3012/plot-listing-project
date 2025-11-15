@@ -122,6 +122,16 @@ const CategorySection = () => {
 
   return (
     <section className="bg-white py-16 px-4 sm:px-6 lg:px-12">
+      {/* Header Section - No Animation */}
+      <div className="max-w-7xl mx-auto text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+          Popular Categories
+        </h2>
+        <p className="text-gray-500 text-lg">
+          Check Them Out
+        </p>
+      </div>
+
       <div className="max-w-7xl mx-auto bg-[#2B2D42] rounded-2xl overflow-hidden shadow-xl flex flex-col lg:flex-row">
         {/* Sidebar */}
         <div className="w-full lg:w-1/3 flex flex-col">
@@ -149,7 +159,7 @@ const CategorySection = () => {
           ))}
         </div>
 
-        {/* Content Area */}
+        {/* Content Area - With Animations */}
         <div className="flex-1 p-8 text-white flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Text Content */}
           <div className="md:w-1/2 space-y-5">

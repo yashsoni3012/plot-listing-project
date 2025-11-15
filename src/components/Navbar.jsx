@@ -189,7 +189,7 @@ const Navbar = () => {
           <motion.div layout>
             <Link
               to="/add-listing"
-              className={`hidden md:block px-5 py-2 rounded-full font-medium transition-all duration-300 ${
+              className={`hidden md:block px-5 py-2 rounded-lg font-medium transition-all duration-300 ${
                 scrolled
                   ? "bg-[#8D99AF] text-white hover:bg-[#7a8497]"
                   : "bg-[#8D99AF] text-white hover:bg-white hover:text-[#8D99AF]"
