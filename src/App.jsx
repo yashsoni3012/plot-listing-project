@@ -8,6 +8,8 @@ import Listing from "./pages/Listing";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ContactUs from "./pages/ContactUs";
+import ScrollToTop from "./ScrollToTop"; // Import ScrollToTop
+import ScrollToTopBtn from "./ScrollToTopBtn";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -26,7 +28,9 @@ function App() {
         <Loader />
       ) : (
         <BrowserRouter>
-        <Navbar/>
+          {/* Add ScrollToTop here - inside BrowserRouter but before other components */}
+          <ScrollToTop />
+          <Navbar/>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/categories" element={<Categories />} />
@@ -34,6 +38,7 @@ function App() {
             <Route path="/contact" element={<ContactUs />} />
           </Routes>
           <Footer/>
+           <ScrollToTopBtn />
         </BrowserRouter>
       )}
     </>
