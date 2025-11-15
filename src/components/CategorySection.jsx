@@ -132,7 +132,7 @@ const CategorySection = () => {
         </p>
       </div>
 
-      <div className="max-w-7xl mx-auto bg-[#2B2D42] rounded-2xl overflow-hidden shadow-xl flex flex-col lg:flex-row">
+      <div className="max-w-7xl mx-auto bg-[#2B2D42] rounded-xl overflow-hidden shadow-xl flex flex-col lg:flex-row">
         {/* Sidebar */}
         <div className="w-full lg:w-1/3 flex flex-col">
           {categories.map((cat) => (
@@ -147,7 +147,7 @@ const CategorySection = () => {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
-              <motion.div 
+              <motion.div
                 className="bg-white p-3 rounded-full"
                 whileHover={{ rotate: 5 }}
                 transition={{ type: "spring", stiffness: 300 }}
