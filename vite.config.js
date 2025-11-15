@@ -12,4 +12,4 @@ export default defineConfig({
       // ... your existing rollup options if any
     }
   }
-})
+})  
