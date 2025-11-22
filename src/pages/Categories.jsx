@@ -8,6 +8,7 @@ const Categories = () => {
     <div>
      <CategoryHeroSection/>
      <CategoryContent/>
+     
     </div>
   )
 }
